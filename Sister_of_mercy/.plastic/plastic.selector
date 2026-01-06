@@ -1,0 +1,4 @@
+repository "Sister_of_mercy/Sister_of_mercy@7971812542901@cloud"
+  path "/"
+    br "/main"
+    co "/main"
