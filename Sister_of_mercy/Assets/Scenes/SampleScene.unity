@@ -5167,7 +5167,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5833579, y: 0.83846265}
   m_AnchorMax: {x: 1, y: 0.95400006}
-  m_AnchoredPosition: {x: -1.6759949, y: 0}
+  m_AnchoredPosition: {x: -236, y: -426}
   m_SizeDelta: {x: 3.3521118, y: 0.27920532}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1595876552
@@ -5183,7 +5183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5203,7 +5203,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "0/10 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u043E\u0432 \u0441\u043E\u0431\u0440\u0430\u043D\u043E"
+  m_Text: 'Press F to enter '
 --- !u!222 &1595876553
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5588,6 +5588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df482fa528193c7498a1c7693b688075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 1595876552}
 --- !u!65 &1786113441
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5603,12 +5604,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.9310837, y: 2.544261, z: 1}
-  m_Center: {x: -0.026042938, y: -0.03257847, z: 0}
+  m_Size: {x: 2.9310837, y: 3.483303, z: 2.5472183}
+  m_Center: {x: -0.026042938, y: 0.5792217, z: -0.77360916}
 --- !u!4 &1786113442
 Transform:
   m_ObjectHideFlags: 0
@@ -5618,7 +5619,7 @@ Transform:
   m_GameObject: {fileID: 1786113439}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 98.7983, y: 2.1614962, z: 62.301}
+  m_LocalPosition: {x: 98.7983, y: 2.1614962, z: 62.724}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

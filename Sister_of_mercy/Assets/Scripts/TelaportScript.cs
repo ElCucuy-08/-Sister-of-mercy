@@ -7,6 +7,7 @@ public class TelaportScript : MonoBehaviour
     //GameObject spawnPoint;
     GameObject player;
     bool CanEnter = false;
+    public UnityEngine.UI.Text text;
     private void Start()
     {
         //spawnPoint = GameObject.FindWithTag("Hall");
@@ -20,6 +21,14 @@ public class TelaportScript : MonoBehaviour
             SceneManager.LoadScene("OnSideMap");
             CanEnter = false;
         }
+        if (CanEnter)
+        {
+            text.gameObject.SetActive(true);
+        }
+        if (!CanEnter)
+        {
+            text.gameObject.SetActive(false);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -28,5 +37,9 @@ public class TelaportScript : MonoBehaviour
             CanEnter = true;
         }
     }
-   
+    private void OnTriggerExit(Collider other)
+    {
+            CanEnter = false;
+    }
+
 }
