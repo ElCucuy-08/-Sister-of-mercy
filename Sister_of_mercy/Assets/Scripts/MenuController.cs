@@ -11,6 +11,7 @@ public class MenuController : MonoBehaviour
     public GameObject MainMenuCredits;
     public GameObject MainMenuPlay;
     public GameObject MainMenu;
+    public GameObject Background;
     float playTimer = 0f;
     bool isPlaying = false;
     public void SettingsON()
@@ -36,7 +37,7 @@ public class MenuController : MonoBehaviour
 
     public void PlayButton()
     {
-        MainMenu.SetActive(false);
+        Background.SetActive(false);
         MainMenuPlay.SetActive(true);
         isPlaying = true;
     }
