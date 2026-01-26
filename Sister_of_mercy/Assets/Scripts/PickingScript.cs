@@ -5,43 +5,48 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PickingScript : MonoBehaviour
 {
-    bool CanPickUp = false;
-    public UnityEngine.UI.Text items;
+    private bool CanPickUp = false;
+    private GameObject currentItem; 
+    public Text itemsText; 
     public int maxItems = 10;
     public int currentItems = 0;
-    GameObject item;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        items.text = $"{currentItems}/{maxItems} предметов собрано";
+        itemsText.text = $"{currentItems}/{maxItems} предметов собрано";
 
-        if (CanPickUp && Input.GetKeyDown(KeyCode.F))
+        if (CanPickUp && Input.GetKeyDown(KeyCode.F) && currentItems < maxItems)
         {
             currentItems++;
-            Destroy(item.gameObject);
+            Destroy(currentItem);
+            CanPickUp = false;
         }
-        if (currentItems == maxItems)
+
+        if (currentItems >= maxItems)
         {
             End();
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Items")
+        if (other.CompareTag("Items"))
         {
             CanPickUp = true;
-            item = other.gameObject;
+            currentItem = other.gameObject;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Items"))
+        {
+            CanPickUp = false;
         }
     }
 
     public void End()
     {
-
+        Debug.Log("Все предметы собраны!");
     }
 }

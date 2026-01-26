@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 public class TelaportScript : MonoBehaviour
 {
     //GameObject spawnPoint;
+    private GameObject currentItem;
+    public int maxItems = 1;
+    public int currentItems = 0;
+    //cdknslnvndslv
     GameObject player;
     bool CanEnter = false;
     public UnityEngine.UI.Text text;
@@ -16,7 +20,13 @@ public class TelaportScript : MonoBehaviour
     }
     private void Update()
     {
-        if (CanEnter && Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && currentItems < maxItems)
+        {
+            currentItems++;
+            Destroy(currentItem);
+        }
+        //jgioevjds;vjpsk/
+        if (CanEnter && Input.GetKeyDown(KeyCode.G) && currentItems == maxItems)
         {
             SceneManager.LoadScene("OnSideMap");
             CanEnter = false;
@@ -36,10 +46,15 @@ public class TelaportScript : MonoBehaviour
         {
             CanEnter = true;
         }
+        //fnrewiohgoearh
+        if (other.CompareTag("Items"))
+        {
+            currentItem = other.gameObject;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
-            CanEnter = false;
+            CanEnter = false;   
     }
 
 }
