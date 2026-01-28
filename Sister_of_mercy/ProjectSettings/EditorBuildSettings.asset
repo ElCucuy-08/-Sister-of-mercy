@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OnSideMap.unity
     guid: db33db84505c61343ae0ee35e49f7ef1
+  - enabled: 1
+    path: Assets/Scenes/inside.unity
+    guid: 46dea6e98cdceac428d546cb70939034
   m_configObjects: {}

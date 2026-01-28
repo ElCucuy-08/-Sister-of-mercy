@@ -2,12 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class TelaportScript : MonoBehaviour
 {
     //GameObject spawnPoint;
     private GameObject currentItem;
     public int maxItems = 1;
     public int currentItems = 0;
+    [SerializeField] Text Begin;
+    [SerializeField] Text Takes;
+    [SerializeField] Text Openthedoor;
+    [SerializeField] Text Not;
+    [SerializeField] GameObject key;
+    bool take = false;
+    bool openthedoor = false;
     //cdknslnvndslv
     GameObject player;
     bool CanEnter = false;
@@ -20,41 +28,79 @@ public class TelaportScript : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && currentItems < maxItems)
+        if(take==true)
         {
-            currentItems++;
-            Destroy(currentItem);
+            Takes.gameObject.SetActive(true);
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+
+                Takes.gameObject.SetActive(false);
+                CanEnter = true;
+                Destroy(key.gameObject);
+
+            }
+        }
+        if(openthedoor==true)
+        {
+            if (CanEnter == true)
+            {
+                Openthedoor.gameObject.SetActive(true);
+            }
+            if (CanEnter == false)
+            {
+                Not.gameObject.SetActive(true);
+            }
+            if (CanEnter == true && Input.GetKeyDown(KeyCode.G))
+            {
+                SceneManager.LoadScene(2);
+                CanEnter = false;
+            }
+        }
+        if (openthedoor == false)
+        {
+            Not.gameObject.SetActive(false);
+            Openthedoor.gameObject.SetActive(false);
+        }
+            if (take==false)
+        {
+            Takes.gameObject.SetActive(false);
+        }
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            Begin.gameObject.SetActive(false);
         }
         //jgioevjds;vjpsk/
-        if (CanEnter && Input.GetKeyDown(KeyCode.G) && currentItems == maxItems)
-        {
-            SceneManager.LoadScene("OnSideMap");
-            CanEnter = false;
-        }
-        if (CanEnter)
-        {
-            text.gameObject.SetActive(true);
-        }
-        if (!CanEnter)
-        {
-            text.gameObject.SetActive(false);
-        }
+        
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
-        {
-            CanEnter = true;
-        }
+        //if (other.gameObject.tag == "Player")
+        //{
+        //    CanEnter = true;
+        //}
         //fnrewiohgoearh
         if (other.CompareTag("Items"))
         {
+            take = true;
+
+            currentItem = other.gameObject;
+        }
+        if (other.CompareTag("Finish"))
+        {
+            openthedoor = true;
+
             currentItem = other.gameObject;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-            CanEnter = false;   
+            
+            Takes.gameObject.SetActive(false);
+            Not.gameObject.SetActive(false);
+            Openthedoor.gameObject.SetActive(false);
+            take = false;
+            openthedoor=false;
     }
 
 }
