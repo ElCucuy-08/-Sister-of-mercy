@@ -497,6 +497,7 @@
 "Assets/Scripts/AudioController.cs"
 "Assets/Scripts/Hide.cs"
 "Assets/Scripts/MenuController.cs"
+"Assets/Scripts/OpenDoor.cs"
 "Assets/Scripts/PickingScript.cs"
 "Assets/Scripts/SettingManager.cs"
 "Assets/Scripts/TelaportScript.cs"
