@@ -718,15 +718,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4492627712720894, guid: 2619ececdb14aea42a9a5ea90854b3d3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.6473427
+      value: 1.280353
       objectReference: {fileID: 0}
     - target: {fileID: 4492627712720894, guid: 2619ececdb14aea42a9a5ea90854b3d3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.0679905
+      value: 2.0928288
       objectReference: {fileID: 0}
     - target: {fileID: 4492627712720894, guid: 2619ececdb14aea42a9a5ea90854b3d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 66.20001
+      value: 62.5011
       objectReference: {fileID: 0}
     - target: {fileID: 4492627712720894, guid: 2619ececdb14aea42a9a5ea90854b3d3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -734,7 +734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4492627712720894, guid: 2619ececdb14aea42a9a5ea90854b3d3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 53.559998
+      value: 51.1437
       objectReference: {fileID: 0}
     - target: {fileID: 4492627712720894, guid: 2619ececdb14aea42a9a5ea90854b3d3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1311,7 +1311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!154 &1096198592
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -2623,7 +2623,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
