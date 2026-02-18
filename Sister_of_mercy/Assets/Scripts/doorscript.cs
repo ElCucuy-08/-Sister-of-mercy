@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class doorscript : MonoBehaviour
 {
-    public Animation anim;
+    public Animator anim;
+    bool isOpened = false;
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animation>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        anim.SetBool("isOpened", isOpened);
     }
     private void OnTriggerStay(Collider other)
     {
-        if (anim != null && Input.GetKey(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            //anim.clip.legacy = true;
-            anim.Play();
+            isOpened = !isOpened;
         }
     }
 }
