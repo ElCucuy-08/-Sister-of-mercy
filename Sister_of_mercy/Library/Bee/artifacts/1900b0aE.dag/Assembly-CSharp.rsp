@@ -460,6 +460,7 @@
 "Assets/Scripts/doorOpeningScript.cs"
 "Assets/Scripts/doorscript.cs"
 "Assets/Scripts/dsddd.cs"
+"Assets/Scripts/Jumpscare.cs"
 "Assets/Scripts/MenuController.cs"
 "Assets/Scripts/SettingManager.cs"
 "Assets/Scripts/TelaportScript.cs"
