@@ -462,6 +462,7 @@
 "Assets/Scripts/dsddd.cs"
 "Assets/Scripts/Jumpscare.cs"
 "Assets/Scripts/MenuController.cs"
+"Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/SettingManager.cs"
 "Assets/Scripts/TelaportScript.cs"
 -langversion:9.0
