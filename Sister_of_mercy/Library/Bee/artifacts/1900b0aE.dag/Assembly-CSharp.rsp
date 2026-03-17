@@ -508,6 +508,7 @@
 "Assets/Scripts/OpenDoor.cs"
 "Assets/Scripts/PickingScript.cs"
 "Assets/Scripts/PickUpItems.cs"
+"Assets/Scripts/ScrollingText.cs"
 "Assets/Scripts/SettingManager.cs"
 "Assets/Scripts/TelaportScript.cs"
 -langversion:9.0
