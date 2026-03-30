@@ -14,10 +14,36 @@ public class MonsterAnimationBehaviorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
-            animator.SetBool("isWalking", false);
-            animator.SetBool("isRunning", true);
+            Walk();
         }
+        else if (Input.GetKeyDown(KeyCode.X))
+        {
+            Run();
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            Hit();
+        }
+    }
+
+    public void Walk()
+    {
+        animator.SetBool("isWalking", true);
+        animator.SetBool("isRunning", false);
+        animator.SetBool("isHitting", false);
+    }
+    public void Run()
+    {
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isRunning", true);
+        animator.SetBool("isHitting", false);
+    }
+    public void Hit()
+    {
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isRunning", false);
+        animator.SetBool("isHitting", true);
     }
 }
