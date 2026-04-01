@@ -5,45 +5,35 @@ using UnityEngine;
 public class MonsterAnimationBehaviorScript : MonoBehaviour
 {
     public Animator animator;
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            Walk();
-        }
-        else if (Input.GetKeyDown(KeyCode.X))
-        {
-            Run();
-        }
-        else if (Input.GetKeyDown(KeyCode.C))
-        {
-            Hit();
-        }
-    }
+    public bool isWalking = false;
+    public bool isRunning = false;
+    public bool ishitting = false;
 
     public void Walk()
     {
         animator.SetBool("isWalking", true);
         animator.SetBool("isRunning", false);
         animator.SetBool("isHitting", false);
+        isWalking = true;
+        isRunning = false;
+        ishitting = false;
     }
     public void Run()
     {
         animator.SetBool("isWalking", false);
         animator.SetBool("isRunning", true);
         animator.SetBool("isHitting", false);
+        isWalking = false;
+        isRunning = true;
+        ishitting = false;
     }
     public void Hit()
     {
         animator.SetBool("isWalking", false);
         animator.SetBool("isRunning", false);
         animator.SetBool("isHitting", true);
+        isWalking = false;
+        isRunning = false;
+        ishitting = true;
     }
 }
