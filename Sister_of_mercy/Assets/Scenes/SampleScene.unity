@@ -205,7 +205,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1627042980}
+      - m_Target: {fileID: 300422026}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: PlayButton
         m_Mode: 1
@@ -370,7 +370,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.18200001, y: 0.23585357}
   m_AnchorMax: {x: 0.8206364, y: 0.35543934}
-  m_AnchoredPosition: {x: -0.59939575, y: 0}
+  m_AnchoredPosition: {x: -0.59936523, y: 0}
   m_SizeDelta: {x: -7.8911133, y: -9.4963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &112918167
@@ -725,6 +725,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -524.515}
+--- !u!1 &300422024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 300422025}
+  - component: {fileID: 300422026}
+  m_Layer: 0
+  m_Name: Control
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &300422025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300422024}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 769.6842, y: 377.0631, z: 3.7851088}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &300422026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300422024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7787ac3b83d932f448719bd4191bfcc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainMenuSetting: {fileID: 963541491}
+  MainMenuCredits: {fileID: 1679366067}
+  MainMenuPlay: {fileID: 1942011251}
+  MainMenu: {fileID: 1560653259}
+  Background: {fileID: 1627042974}
+  timeToLimit: 15
 --- !u!1 &324032164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,10 +1121,10 @@ RectTransform:
   - {fileID: 871105130}
   m_Father: {fileID: 963541492}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 350.22717, y: -191}
-  m_SizeDelta: {x: 201.8136, y: 54.7515}
+  m_AnchorMin: {x: 0.62100005, y: 0.08951854}
+  m_AnchorMax: {x: 0.8357469, y: 0.185}
+  m_AnchoredPosition: {x: 0.10546875, y: 0.64038086}
+  m_SizeDelta: {x: -0.48620605, y: -2.7564087}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &535052074
 MonoBehaviour:
@@ -1120,8 +1170,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1627042980}
-        m_TargetAssemblyTypeName: SettingOn, Assembly-CSharp
+      - m_Target: {fileID: 300422026}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: SettingsOFF
         m_Mode: 1
         m_Arguments:
@@ -1359,7 +1409,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 56.57919
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1386,7 +1436,7 @@ Transform:
   m_GameObject: {fileID: 765709222}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2128.277, y: 281.3393, z: 1965.1216}
+  m_LocalPosition: {x: 957, y: 538, z: 1965.1216}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1566,11 +1616,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 04a842e316b6f44bf8da702de26a8ed6, type: 3}
-    m_FontSize: 34
+    m_FontSize: 41
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1882,7 +1932,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1104156085}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 300422026}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1175547680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2079,8 +2141,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1627042980}
-        m_TargetAssemblyTypeName: SettingOn, Assembly-CSharp
+      - m_Target: {fileID: 300422026}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: SettingsON
         m_Mode: 1
         m_Arguments:
@@ -2280,7 +2342,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1627042980}
+      - m_Target: {fileID: 300422026}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: CreditsON
         m_Mode: 1
@@ -2530,6 +2592,7 @@ MonoBehaviour:
   MainMenuPlay: {fileID: 1942011251}
   MainMenu: {fileID: 1560653259}
   Background: {fileID: 1627042974}
+  timeToLimit: 15
 --- !u!328 &1627042981
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -2539,7 +2602,7 @@ VideoPlayer:
   m_GameObject: {fileID: 1627042974}
   m_Enabled: 1
   m_VideoClip: {fileID: 32900000, guid: cdf8de40c3010ae4ab86638b1373f7b8, type: 3}
-  m_TargetCameraAlpha: 1
+  m_TargetCameraAlpha: 0.111
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 765709224}
   m_TargetTexture: {fileID: 0}
@@ -3193,7 +3256,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1627042980}
+      - m_Target: {fileID: 300422026}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: CreditsOFF
         m_Mode: 1
@@ -3279,7 +3342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.18200001, y: 0.6175607}
   m_AnchorMax: {x: 0.8206364, y: 0.72148746}
-  m_AnchoredPosition: {x: -0.09939575, y: -0.25038147}
+  m_AnchoredPosition: {x: -0.099365234, y: -0.25038147}
   m_SizeDelta: {x: -6.8911133, y: -1.4962997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2121308855
@@ -3342,3 +3405,4 @@ SceneRoots:
   - {fileID: 261282548}
   - {fileID: 765709225}
   - {fileID: 583805985}
+  - {fileID: 300422025}

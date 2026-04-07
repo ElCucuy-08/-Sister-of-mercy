@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/PlayScene.unity
-    guid: c012dd40f8b610f41988f3bf56340d23
+    path: Assets/Scenes/Podval.unity
+    guid: 6c21fc297851dd1409720c5085a80f68
   m_configObjects: {}
