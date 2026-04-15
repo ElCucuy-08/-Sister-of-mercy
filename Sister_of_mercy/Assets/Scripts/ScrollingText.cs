@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class ScrollingText : MonoBehaviour
 {
+    public int scrollSpeed = 50;
     // Start is called before the first frame update
     void Start()
     {
         
     }
-    public float scrollSpeed = 50f;
+
     // Update is called once per frame
     void Update()
     {
