@@ -41,6 +41,16 @@ public class MenuController : MonoBehaviour
         MainMenuPlay.SetActive(true);
         isPlaying = true;
     }
+
+    public void Exitscene()
+    {
+        Application.Quit();
+
+        // Эта строка нужна только для проверки в редакторе Unity (так как Quit там не работает)
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+    }
     private void Update()
     {
         if (isPlaying) 
