@@ -51,9 +51,9 @@ public class TelaportScript : MonoBehaviour
             {
                 Not.gameObject.SetActive(true);
             }
-            if (CanEnter == true && Input.GetKeyDown(KeyCode.G))
+            if (CanEnter == true && Input.GetKeyDown(KeyCode.F))
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(4);
                 CanEnter = false;
             }
         }
