@@ -518,7 +518,9 @@
 "Assets/Scripts/SceneChanger.cs"
 "Assets/Scripts/ScrollingText.cs"
 "Assets/Scripts/SettingManager.cs"
+"Assets/Scripts/Sound.cs"
 "Assets/Scripts/TelaportScript.cs"
+"Assets/Scripts/ToTitels.cs"
 -langversion:9.0
 /deterministic
 /optimize+

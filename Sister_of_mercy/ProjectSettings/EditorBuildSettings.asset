@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/inside.unity
     guid: 46dea6e98cdceac428d546cb70939034
+  - enabled: 1
+    path: Assets/Scenes/magazine.unity
+    guid: 4aacbe99656cad54fad95da71d1eafea
   m_configObjects: {}
