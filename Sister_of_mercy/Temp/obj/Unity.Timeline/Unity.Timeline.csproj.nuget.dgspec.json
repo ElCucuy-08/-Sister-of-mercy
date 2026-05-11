@@ -1,0 +1,309 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\Unity.Timeline.csproj": {}
+  },
+  "projects": {
+    "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\Unity.Timeline.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\Unity.Timeline.csproj",
+        "projectName": "Unity.Timeline",
+        "projectPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\Unity.Timeline.csproj",
+        "packagesPath": "C:\\Users\\IT_Dino 3\\.nuget\\packages\\",
+        "outputPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\Temp\\obj\\Unity.Timeline\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\IT_Dino 3\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "framework": "netstandard2.1",
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEditor.UI.csproj"
+              },
+              "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "framework": "netstandard2.1",
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEditor.TestRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEditor.TestRunner.csproj",
+        "projectName": "UnityEditor.TestRunner",
+        "projectPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEditor.TestRunner.csproj",
+        "packagesPath": "C:\\Users\\IT_Dino 3\\.nuget\\packages\\",
+        "outputPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\Temp\\obj\\UnityEditor.TestRunner\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\IT_Dino 3\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "framework": "netstandard2.1",
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.TestRunner.csproj": {
+                "projectPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.TestRunner.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "framework": "netstandard2.1",
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEditor.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEditor.UI.csproj",
+        "projectName": "UnityEditor.UI",
+        "projectPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEditor.UI.csproj",
+        "packagesPath": "C:\\Users\\IT_Dino 3\\.nuget\\packages\\",
+        "outputPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\Temp\\obj\\UnityEditor.UI\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\IT_Dino 3\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "framework": "netstandard2.1",
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEditor.TestRunner.csproj": {
+                "projectPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEditor.TestRunner.csproj"
+              },
+              "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.TestRunner.csproj": {
+                "projectPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.TestRunner.csproj"
+              },
+              "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "framework": "netstandard2.1",
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.TestRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.TestRunner.csproj",
+        "projectName": "UnityEngine.TestRunner",
+        "projectPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.TestRunner.csproj",
+        "packagesPath": "C:\\Users\\IT_Dino 3\\.nuget\\packages\\",
+        "outputPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\Temp\\obj\\UnityEngine.TestRunner\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\IT_Dino 3\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "framework": "netstandard2.1",
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "framework": "netstandard2.1",
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.UI.csproj",
+        "projectName": "UnityEngine.UI",
+        "projectPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\UnityEngine.UI.csproj",
+        "packagesPath": "C:\\Users\\IT_Dino 3\\.nuget\\packages\\",
+        "outputPath": "D:\\Boiko Dmitry\\SistersOfMersy\\-Sister-of-mercy\\Sister_of_mercy\\Temp\\obj\\UnityEngine.UI\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\IT_Dino 3\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "framework": "netstandard2.1",
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "framework": "netstandard2.1",
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

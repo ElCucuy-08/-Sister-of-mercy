@@ -507,6 +507,7 @@
 "Assets/Scripts/Hide.cs"
 "Assets/Scripts/KeyScript.cs"
 "Assets/Scripts/MainDoorOpenScript.cs"
+"Assets/Scripts/MainDoorOpenScript1.cs"
 "Assets/Scripts/MainDoorTriggerScript.cs"
 "Assets/Scripts/MenuController.cs"
 "Assets/Scripts/MonsterAnimationBehaviorScript.cs"
