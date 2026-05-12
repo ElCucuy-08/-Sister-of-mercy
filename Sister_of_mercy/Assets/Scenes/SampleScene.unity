@@ -9532,7 +9532,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Press G to enter '
+  m_Text: 'Press F to enter '
 --- !u!222 &1595876553
 CanvasRenderer:
   m_ObjectHideFlags: 0
