@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class PickingScript : MonoBehaviour
 {
     private bool CanPickUp = false;
@@ -47,6 +48,6 @@ public class PickingScript : MonoBehaviour
 
     public void End()
     {
-        Debug.Log("Все предметы собраны!");
+        SceneManager.LoadScene(5);
     }
 }
