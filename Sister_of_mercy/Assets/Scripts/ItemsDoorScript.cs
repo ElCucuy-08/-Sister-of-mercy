@@ -5,7 +5,7 @@ public class ItemsDoorScript : MonoBehaviour
     // 1. Объявляем переменную для хранения ссылки на компонент
     private Animator anim;
     bool isOpen = false;
-    public PickingScript pickingScript;
+    
     public DoorParentScript trigger;
     void Start()
     {
@@ -15,7 +15,7 @@ public class ItemsDoorScript : MonoBehaviour
 
     void Update()
     {
-        if(pickingScript.currentItems >= 10)
+        if(PickingScript.currentItems >= 10)
         {
             anim.SetBool("isOpen", trigger.isInTrigger);
         }

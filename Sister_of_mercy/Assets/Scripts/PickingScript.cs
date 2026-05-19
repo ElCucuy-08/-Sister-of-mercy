@@ -9,8 +9,8 @@ public class PickingScript : MonoBehaviour
     private bool CanPickUp = false;
     private GameObject currentItem; 
     public Text itemsText; 
-    public int maxItems = 10;
-    public int currentItems = 0;
+    public static int maxItems = 10;
+    public static int currentItems = 0;
 
     void Update()
     {
@@ -48,6 +48,6 @@ public class PickingScript : MonoBehaviour
 
     public void End()
     {
-        SceneManager.LoadScene(5);
+        
     }
 }
