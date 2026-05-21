@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MonsterPatrolWithVision : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class MonsterPatrolWithVision : MonoBehaviour
     private float lastAttackTime;
     private float originalSpeed;          // Для сохранения оригинальной скорости
 
+
+    [SerializeField] public Text text;
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -203,6 +206,7 @@ public class MonsterPatrolWithVision : MonoBehaviour
         //}
         Debug.Log("Монстр убил игрока! Перезагрузка...");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //text.text = "0/10 предметов собрано";
         // Сбрасываем состояние атаки через время
         Invoke(nameof(ResetAttack), 0.5f);
     }
