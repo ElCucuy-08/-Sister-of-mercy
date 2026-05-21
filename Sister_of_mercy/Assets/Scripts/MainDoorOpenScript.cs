@@ -15,7 +15,7 @@ public class MainDoorOpenScript : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.F) && canOpen && key.isPicked)
+        if (Input.GetKeyDown(KeyCode.F) && canOpen /*&& key.isPicked*/)
         {
             
             if(numOfOpens == 0 && rnd.Next(0, 3) == 0)
@@ -40,10 +40,10 @@ public class MainDoorOpenScript : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         canOpen = true;
-        if (key.isPicked)
-        {
-            guiTextComponent.gameObject.SetActive(true);
-        }
+        //if (key.isPicked)
+        //{
+        //    guiTextComponent.gameObject.SetActive(true);
+        //}
     }
     void OnTriggerExit(Collider other)
     {

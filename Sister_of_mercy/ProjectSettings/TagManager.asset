@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Items
   - Text
+  - Door
   layers:
   - Default
   - TransparentFX

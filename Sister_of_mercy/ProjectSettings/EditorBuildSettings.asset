@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/magazine.unity
     guid: 4aacbe99656cad54fad95da71d1eafea
+  - enabled: 1
+    path: Assets/Scenes/movie.unity
+    guid: dd902cf4e0a06a84281642609ec424dd
   m_configObjects: {}

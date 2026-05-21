@@ -1,40 +1,111 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class KeyScript : MonoBehaviour
 {
-    public bool isPicked = false;
-    public bool canPick = false;
-    public GameObject key;
-    // Start is called before the first frame update
+    [Header("Настройки ключа")]
+    public GameObject keyObject;          
+    private bool haveKey = false;          
+    private bool canPickKey = false;       
+
+    [Header("Настройки двери")]
+    public Animator doorAnimator;          
+    public GameObject doorObject;          
+    private bool nearDoor = false;         
+    private bool isDoorOpen = false;       
+
+    [Header("Настройки управления")]
+    public KeyCode pickKeyButton = KeyCode.F;      
+    public KeyCode interactDoorButton = KeyCode.F; 
+
     void Start()
     {
-        
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
+        if (doorAnimator == null && doorObject != null)
         {
-            canPick = true;
+            doorAnimator = doorObject.GetComponent<Animator>();
         }
-        
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
+
+        if (doorObject != null && doorObject.tag != "Door")
         {
-            canPick = false;
+            Debug.LogWarning("Объект двери должен иметь тег 'Door'!");
         }
     }
-    // Update is called once per frame
+
+    void OnTriggerEnter(Collider other)
+    {
+        // Подбор ключа
+        if (other.CompareTag("Player") && !haveKey)
+        {
+            canPickKey = true;
+            Debug.Log("Игрок рядом с ключом. Нажмите " + pickKeyButton + " чтобы взять");
+        }
+
+        if (other.CompareTag("Door"))
+        {
+            nearDoor = true;
+            if (haveKey)
+            {
+                Debug.Log("Рядом с дверью. Нажмите " + interactDoorButton + " чтобы открыть/закрыть");
+            }
+            else
+            {
+                Debug.Log("Нужен ключ, чтобы открыть эту дверь");
+            }
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            canPickKey = false;
+        }
+
+        if (other.CompareTag("Door"))
+        {
+            nearDoor = false;
+            Debug.Log("Игрок отошёл от двери");
+        }
+    }
+
     void Update()
     {
-        if (canPick && Input.GetKeyDown(KeyCode.F))
+        if (canPickKey && Input.GetKeyDown(pickKeyButton) && !haveKey)
         {
-            isPicked = true;
-            key.transform.Translate(0, -30, 0);
+            PickUpKey();
+        }
+
+        if (haveKey && nearDoor && Input.GetKeyDown(interactDoorButton))
+        {
+            ToggleDoor();
         }
     }
+
+    void PickUpKey()
+    {
+        haveKey = true;
+
+        if (keyObject != null)
+        {
+            keyObject.SetActive(false); 
+        }
+
+        Debug.Log("Ключ подобран! Теперь можно открыть дверь");
+    }
+
+    void ToggleDoor()
+    {
+        if (doorAnimator != null)
+        {
+            isDoorOpen = !isDoorOpen;
+            doorAnimator.SetBool("Open", isDoorOpen);
+            Debug.Log(isDoorOpen ? "Дверь открыта" : "Дверь закрыта");
+        }
+        else
+        {
+            Debug.LogError("Аниматор двери не назначен!");
+        }
+    }
+
+    public bool HasKey() { return haveKey; }
+    public bool IsDoorOpen() { return isDoorOpen; }
 }
