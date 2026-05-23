@@ -8,9 +8,14 @@ public class PickingScript : MonoBehaviour
 {
     private bool CanPickUp = false;
     private GameObject currentItem; 
-    public Text itemsText; 
+    public Text itemsText;
     public static int maxItems = 10;
-    public static int currentItems = 0;
+    public static int currentItems;
+
+    private void Start()
+    {
+        currentItems = 0;
+    }
 
     void Update()
     {

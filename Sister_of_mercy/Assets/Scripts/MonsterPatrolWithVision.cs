@@ -209,6 +209,7 @@ public class MonsterPatrolWithVision : MonoBehaviour
         //text.text = "0/10 предметов собрано";
         // Сбрасываем состояние атаки через время
         Invoke(nameof(ResetAttack), 0.5f);
+        PickingScript.currentItems = 0;
     }
 
     private void ResetAttack()
