@@ -10,12 +10,12 @@ public class KeyScript : MonoBehaviour
     [Header("Настройки двери")]
     public Animator doorAnimator;          
     public GameObject doorObject;          
-    private bool nearDoor = false;         
+    public bool nearDoor = false;         
     private bool isDoorOpen = false;       
 
     [Header("Настройки управления")]
     public KeyCode pickKeyButton = KeyCode.F;      
-    public KeyCode interactDoorButton = KeyCode.F; 
+    public KeyCode interactDoorButton = KeyCode.G; 
 
     void Start()
     {
@@ -74,7 +74,7 @@ public class KeyScript : MonoBehaviour
             PickUpKey();
         }
 
-        if (haveKey && nearDoor && Input.GetKeyDown(interactDoorButton))
+        if (haveKey  && Input.GetKeyDown(interactDoorButton))
         {
             ToggleDoor();
         }
@@ -97,7 +97,7 @@ public class KeyScript : MonoBehaviour
         if (doorAnimator != null)
         {
             isDoorOpen = !isDoorOpen;
-            doorAnimator.SetBool("Open", isDoorOpen);
+            doorAnimator.SetBool("isOpen", isDoorOpen);
             Debug.Log(isDoorOpen ? "Дверь открыта" : "Дверь закрыта");
         }
         else
