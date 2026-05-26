@@ -9,6 +9,16 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(sceneId);
     }
 
+    public void QuitGame()
+    {
+        
+
+        // Закрывает приложение (работает в скомпилированной игре)
+        Application.Quit();
+
+        // Останавливает режим воспроизведения (работает только в редакторе Unity)
+       
+    }
     // Пример: загрузка следующей сцены по порядку
     public void LoadNextScene()
     {
