@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Sister_of_mercy.sln"
+    "dotnet.defaultSolution": "Sister_of_mercy.slnx"
 }

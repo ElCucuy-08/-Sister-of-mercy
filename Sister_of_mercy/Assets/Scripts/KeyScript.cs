@@ -2,20 +2,20 @@ using UnityEngine;
 
 public class KeyScript : MonoBehaviour
 {
-    [Header("Настройки ключа")]
+    [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ")]
     public GameObject keyObject;          
     private bool haveKey = false;          
     private bool canPickKey = false;       
 
-    [Header("Настройки двери")]
+    [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ")]
     public Animator doorAnimator;          
     public GameObject doorObject;          
     public bool nearDoor = false;         
     private bool isDoorOpen = false;       
 
-    [Header("Настройки управления")]
+    [Header("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ")]
     public KeyCode pickKeyButton = KeyCode.F;      
-    public KeyCode interactDoorButton = KeyCode.G; 
+    public KeyCode interactDoorButton = KeyCode.F; 
 
     void Start()
     {
@@ -26,17 +26,17 @@ public class KeyScript : MonoBehaviour
 
         if (doorObject != null && doorObject.tag != "Door")
         {
-            Debug.LogWarning("Объект двери должен иметь тег 'Door'!");
+            Debug.LogWarning("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ 'Door'!");
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        // Подбор ключа
+        // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         if (other.CompareTag("Player") && !haveKey)
         {
             canPickKey = true;
-            Debug.Log("Игрок рядом с ключом. Нажмите " + pickKeyButton + " чтобы взять");
+            Debug.Log("пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ " + pickKeyButton + " пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ");
         }
 
         if (other.CompareTag("Door"))
@@ -44,11 +44,11 @@ public class KeyScript : MonoBehaviour
             nearDoor = true;
             if (haveKey)
             {
-                Debug.Log("Рядом с дверью. Нажмите " + interactDoorButton + " чтобы открыть/закрыть");
+                Debug.Log("пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ " + interactDoorButton + " пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
             }
             else
             {
-                Debug.Log("Нужен ключ, чтобы открыть эту дверь");
+                Debug.Log("пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ");
             }
         }
     }
@@ -63,7 +63,7 @@ public class KeyScript : MonoBehaviour
         if (other.CompareTag("Door"))
         {
             nearDoor = false;
-            Debug.Log("Игрок отошёл от двери");
+            Debug.Log("пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ");
         }
     }
 
@@ -74,7 +74,7 @@ public class KeyScript : MonoBehaviour
             PickUpKey();
         }
 
-        if (haveKey  && Input.GetKeyDown(interactDoorButton))
+        if (haveKey && nearDoor && Input.GetKeyDown(interactDoorButton))
         {
             ToggleDoor();
         }
@@ -89,21 +89,18 @@ public class KeyScript : MonoBehaviour
             keyObject.SetActive(false); 
         }
 
-        Debug.Log("Ключ подобран! Теперь можно открыть дверь");
+        Debug.Log("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ! пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ");
     }
 
     void ToggleDoor()
     {
-        if (doorAnimator != null)
+        if(haveKey && doorAnimator != null)
         {
             isDoorOpen = !isDoorOpen;
-            doorAnimator.SetBool("isOpen", isDoorOpen);
-            Debug.Log(isDoorOpen ? "Дверь открыта" : "Дверь закрыта");
+            doorAnimator.SetBool("open", isDoorOpen);
+            
         }
-        else
-        {
-            Debug.LogError("Аниматор двери не назначен!");
-        }
+       
     }
 
     public bool HasKey() { return haveKey; }
